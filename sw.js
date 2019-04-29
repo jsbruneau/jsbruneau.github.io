@@ -4,7 +4,5 @@ self.addEventListener('install', function(event) {
 self.addEventListener('fetch', function(event) {
   console.log('SW: fetch Event Called');
   console.log(event);
-  event.respondWith(
-    return fetch(event.request);
-  );
+  return;
 });
